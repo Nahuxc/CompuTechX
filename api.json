@@ -2,108 +2,126 @@
     {
         "tituloproduct": "Motherboard Asus Prime B450m-a",
         "imgproduct":"./img/motherboard2.jpg",
+        "peso": "$",
         "precio": 8000,
         "id": 1
     },
     {
         "tituloproduct": "Motherboard B560m Aorus",
         "imgproduct":"./img/motherboard.jpg",
+        "peso": "$",
         "precio": 20000,
         "id": 2
     },
     {
         "tituloproduct": "Motherboard Asus Prime A320m-k",
         "imgproduct":"./img/motherboard2.jpg",
+        "peso": "$",
         "precio": 5330,
         "id": 3
     },
     {
         "tituloproduct": "Procesador Intel Core I3",
         "imgproduct":"./img/Procesador.jpg",
+        "peso": "$",
         "precio": 14000,
         "id": 4
     },
     {
         "tituloproduct": "Procesador Intel Core I3",
         "imgproduct":"./img/Procesador.jpg",
+        "peso": "$",
         "precio": 18000,
         "id": 5
     },
     {
         "tituloproduct": "Procesador Intel Core I5",
         "imgproduct":"./img/Procesador1.jpg",
+        "peso": "$",
         "precio": 25000,
         "id": 6
     },
     {
         "tituloproduct": "RAM HyperX DDR4 8GB 2400MHz",
         "imgproduct":"./img/ram.jpg",
+        "peso": "$",
         "precio": 5320,
         "id": 7
     },
     {
         "tituloproduct": "RAM HyperX DDR4 4GB 2400MHz",
         "imgproduct":"./img/ram.jpg",
+        "peso": "$",
         "precio": 2800,
         "id": 8
     },
     {
         "tituloproduct": "RAM HyperX DDR4 16GB 2666MHz",
         "imgproduct":"./img/ram.jpg",
+        "peso": "$",
         "precio": 11500,
         "id": 9
     },
     {
         "tituloproduct": "Fuente Cyclon 500w",
         "imgproduct":"./img/Fuente.jpg",
+        "peso": "$",
         "precio": 6500,
         "id": 10
     },
     {
         "tituloproduct": "Fuente LNZ 550w",
         "imgproduct":"./img/Fuente1.jpg",
+        "peso": "$",
         "precio": 1400,
         "id": 11
     },
     {
         "tituloproduct": "Fuente Cyclon 750w",
         "imgproduct":"./img/Fuente.jpg",
+        "peso": "$",
         "precio": 8000,
         "id": 12
     },
     {
         "tituloproduct": "Disco SSD Kingston 120 GB",
         "imgproduct":"./img/SSD.jpg",
+        "peso": "$",
         "precio": 2100,
         "id": 13
     },
     {
         "tituloproduct": "Disco SSD Kingston 240 GB",
         "imgproduct":"./img/SSD.jpg",
+        "peso": "$",
         "precio": 3800,
         "id": 14
     },
     {
         "tituloproduct": "Disco SSD Kingston 960 GB",
         "imgproduct":"./img/SSD.jpg",
+        "peso": "$",
         "precio": 18000,
         "id": 15
     },
     {
         "tituloproduct": "Gabinete Brainstorm Spark",
         "imgproduct":"./img/Gabinete1.jpg",
+        "peso": "$",
         "precio": 5350,
         "id": 16
     },
     {
         "tituloproduct": "Brainstorm Mastra Series 4 Fan Rgb",
         "imgproduct":"./img/Gabinete1.jpg",
+        "peso": "$",
         "precio": 8200,
         "id": 17
     },
     {
         "tituloproduct": "Gabinete Sentey",
         "imgproduct":"./img/Gabinete.jpg",
+        "peso": "$",
         "precio": 3400,
         "id": 18
     }

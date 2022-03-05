@@ -33,6 +33,12 @@ body.dark .navbar {
       justify-content: space-around;
 }
 
+.navbar .nav-menu .interfaz-user .carrito {
+  margin-right: 20px;
+  padding: 5px;
+  width: 15%;
+}
+
 .navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode {
   margin-right: 10px;
   border: none;
@@ -44,98 +50,6 @@ body.dark .navbar {
   background-color: #1276b8;
   font-size: 15px;
   padding: 5px;
-}
-
-.navbar .nav-menu .interfaz-user .carrito {
-  margin-right: 20px;
-  padding: 5px;
-  width: 15%;
-  /* a{
-                    text-decoration: none;
-                    color: black;
-                    body.dark &{
-                        color: white;
-                        text-decoration: none;
-                    }
-                    i{
-                        font-size: 30px;
-                    }
-                } */
-}
-
-.navbar .nav-menu .interfaz-user .carrito .submenu {
-  position: relative;
-  width: 50%;
-}
-
-.navbar .nav-menu .interfaz-user .carrito .submenu i {
-  font-size: 30px;
-  margin: -20px;
-}
-
-.navbar .nav-menu .interfaz-user .carrito .submenu #changito {
-  display: none;
-}
-
-.navbar .nav-menu .interfaz-user .carrito .submenu:hover #changito {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  right: -50px;
-  color: white;
-  top: 100%;
-  z-index: 1;
-  border-radius: 10px;
-  background-color: rgba(30, 31, 32, 0.644);
-  padding: 20px;
-  min-height: 400px;
-  min-width: 300px;
-}
-
-body.dark .navbar .nav-menu .interfaz-user .carrito .submenu:hover #changito {
-  background-color: rgba(243, 245, 247, 0.644);
-  color: black;
-}
-
-.navbar .nav-menu .interfaz-user .carrito .vaciar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f2f2f2;
-  border-radius: 50px;
-  margin: 10px;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-body.dark .navbar .nav-menu .interfaz-user .carrito .vaciar {
-  background-color: #3d3d3d;
-  color: white;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-body.dark .navbar .nav-menu .interfaz-user .carrito .vaciar:hover {
-  background-color: #e2e2e2;
-  border-radius: 15px;
-  color: #202020;
-}
-
-.navbar .nav-menu .interfaz-user .carrito .vaciar:hover {
-  background-color: #206db4;
-  border-radius: 15px;
-  color: white;
 }
 
 .navbar .nav-menu .interfaz-user .usuario {
@@ -155,6 +69,12 @@ body.dark .navbar .nav-menu .interfaz-user .usuario a {
 
 .navbar .nav-menu .interfaz-user .usuario a i {
   font-size: 30px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.navbar .nav-menu .interfaz-user .usuario a i:hover {
+  color: #2587c8;
 }
 
 .navbar .nav-menu .h2-brand {
@@ -326,7 +246,7 @@ body.dark .productos-backg {
 .sect-productos {
   margin: 10px auto;
   padding: 30px;
-  width: 80%;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0.685);
   border-radius: 10px;
 }
@@ -436,6 +356,21 @@ body.dark .sect-productos .products-box .box-p .productos {
   height: auto;
 }
 
+.sect-productos .products-box .box-p .productos .peso {
+  position: relative;
+  top: 29px;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .sect-productos .products-box .box-p .productos .precio {
   line-height: 2;
   font-family: sans-serif;
@@ -454,6 +389,105 @@ body.dark .sect-productos .products-box .box-p .productos {
   font-family: sans-serif;
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.sect-productos .products-box .box-p .productos .btnbuy:hover {
+  background-color: #28a1f1;
+}
+
+.carrito .submenu {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.carrito .submenu:hover {
+  color: #2587c8;
+}
+
+.carrito .submenu i {
+  font-size: 30px;
+  margin: -20px;
+}
+
+.carrito .submenu #carrito-menu {
+  display: none;
+}
+
+.carrito .submenu:hover #carrito-menu {
+  display: block;
+  position: absolute;
+  right: -80px;
+  color: white;
+  top: 100%;
+  bottom: 10px;
+  z-index: 1;
+  margin: 5px auto;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 500px;
+  background-color: rgba(29, 27, 27, 0.746);
+  border-radius: 10px;
+}
+
+body.dark .carrito .submenu:hover #carrito-menu {
+  background-color: rgba(125, 125, 125, 0.705);
+}
+
+.carrito .submenu:hover #carrito-menu .table {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+}
+
+.carrito .submenu:hover #carrito-menu .table .th-1 {
+  padding: 10px;
+  color: #e4e4e4;
+  text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+  background-color: #333333;
+  border-radius: 20px;
+  width: 30%;
+  line-height: 1;
+}
+
+.carrito .submenu:hover #carrito-menu .table .btnsuma {
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  color: #ffffff;
+  background-color: #1c78ce;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.carrito .submenu:hover #carrito-menu .table .btnsuma:hover {
+  background-color: #00a2ff;
+}
+
+.carrito .submenu:hover #carrito-menu .table .btnresta {
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+  background-color: #e94b4b;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.carrito .submenu:hover #carrito-menu .table .btnresta:hover {
+  background-color: #eb1c1c;
 }
 
 * {
@@ -463,7 +497,12 @@ body.dark .sect-productos .products-box .box-p .productos {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  width: 100%;
   background-color: #cccaca;
   color: black;
   font-family: sans-serif;
@@ -476,11 +515,6 @@ body {
   background-attachment: fixed;
   position: relative;
   background-size: cover;
-  /* background-color: #cccaca;
-    color: black;
-    font-family: sans-serif;
-    font-weight: 600;
-    transition: .3 ease all; */
 }
 
 body.dark {

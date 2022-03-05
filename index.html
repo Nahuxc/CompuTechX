@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <!--Barra De Navegacion-->
         <div class="navbar">
             <div class="nav-menu">
                 <div class="brand">
@@ -22,22 +23,25 @@
                     <li><a class="nav-a" href="#">Comunicate</a></li>
                 </ul>
                 <div class="interfaz-user">
+                    <!--carrito-->
                     <div class="carrito">
                         <ul>
                             <li class="submenu">
-                                <i class="fa-solid fa-cart-shopping" id="img-carrito"></i>
-                                <div id="changito">
-                                    <table id="lista_carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <div id="carrito-menu">
+                                    <table class="table" id="shop">
                                         <thead>
-                                            <tr>
-                                                <th>Productos</th>
-                                                <th></th>
+                                            <tr class="tr-1">
+                                                <th class="th-1">Productos</th>
+                                                <th class="th-1">Cantidad</th>
+                                                <th class="th-1">Accion</th>
+                                                <th class="th-1">Total</th>
                                             </tr>
                                         </thead>
-                                        <tbody></tbody>
+                                        <tbody id="item"></tbody>
                                         <tfoot>
                                             <tr id="footer">
-                                                <th class="text-carrito">Carrito vacio</th>
+                                                <!-- <th class="th-2">Carrito Vacio - Comience a comprar!</th> -->
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -58,6 +62,7 @@
         </div>
     </header>
     <main>
+        <!--Categorias-->
         <div class="productos-backg">
             <div class="categoria">
                 <h2 class="h2-cate">Categorias</h2>
@@ -73,11 +78,12 @@
                 </div>
             </div>
         </div>
+        <!--Section productos-->
         <section class="sect-productos">
             <h1>Productos - <span class="c3">C</span>ompu<span class="c1">T</span>ech<span class="c2">X</span></h1>
             <hr>
                 <div class="products-box">
-                    <div id="items" class="box-p"></div>
+                    <div id="cards" class="box-p"></div>
                 </div>
         </section>
         <!--Creacion de la carta de productos-->
@@ -85,16 +91,16 @@
             <div class="productos">
                 <h2 class="tituloproduct"></h2>
                 <img class="imgproduct" src="" alt="">
+                <p class="peso"></p>
                 <p class="precio"></p>
                 <button class="btnbuy">Comprar</button>
             </div>
         </template>
     <!--Creacion de objetos de productos en el carrito-->
-        <template class="templatecarrito">
+        <template id="template-carrito">
             <tr>
-                <th>id</th>
-                <td>Cafe</td>
-                <td>1</td>
+                <td></td>
+                <td></td>
                 <td>
                     <button class="btnsuma">
                         +
@@ -107,7 +113,7 @@
             </tr>
         </template>
         <!--Creacion de footer de productos en el carrito-->
-        <template class="templateFooter">
+        <template id="template-footer">
             <th>total Productos</th>
             <td>10</td>
             <td>
@@ -115,11 +121,15 @@
                     Vaciar todo
                 </button>
             </td>
+            <td>$<span>5000</span></td>
         </template>
     </main>
     <footer>
 
     </footer>
+
+    <!--sweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--JavaScript-->
     <script src="./js/main.js"></script>
     <!--FontAwesome-->

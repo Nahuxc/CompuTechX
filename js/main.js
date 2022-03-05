@@ -1,8 +1,11 @@
-const items = document.getElementById('items');
+//variables
+const cards = document.getElementById('cards');
+const item = document.getElementById('item');
 const footer = document.getElementById('footer');
 const templateProd = document.getElementById('templateprod').content;
-const templateCarrito = document.querySelector('.templatecarrito').content;
-const templateFooter = document.querySelector('.templateFooter').content;
+const templateCarrito = document.getElementById('template-carrito').content;
+const templateFooter = document.getElementById('template-footer').content;
+const btnbuys = document.querySelector('.btnbuy');
 const fragment = document.createDocumentFragment();
 let carrito = {}
 
@@ -10,10 +13,19 @@ document.addEventListener('DOMContentLoaded', () =>{
     fetchData();
 });
 
-items.addEventListener('click', e =>{
+cards.addEventListener('click', e =>{
     addCarrito(e)
 })
 
+const alerts = () =>{
+    swal({
+        title: "Bienvenido a CompuTechX",
+        text: "Donde Encontraras Los Mejores Precios Y Productos",
+        button: "Continuar",
+    });
+}
+
+alerts();
 
 
 //json
@@ -33,15 +45,17 @@ const pintarProd = data =>{
     data.forEach(producto => {
         templateProd.querySelector('.tituloproduct').textContent = producto.tituloproduct
         templateProd.querySelector('.imgproduct').setAttribute("src", producto.imgproduct)
+        templateProd.querySelector('.peso').textContent = producto.peso
         templateProd.querySelector('.precio').textContent = producto.precio
         templateProd.querySelector('.btnbuy').dataset.id = producto.id;
 
         const clone = templateProd.cloneNode(true)
         fragment.appendChild(clone)
     });
-    items.appendChild(fragment)
+    cards.appendChild(fragment)
 }
 
+//añadir al carrito
 const addCarrito = e =>{
     if(e.target.classList.contains('btnbuy')){
         setCarrito(e.target.parentElement)
@@ -62,15 +76,32 @@ const setCarrito = objeto =>{
 
     carrito[producto.id] = {...producto}
     console.log(carrito);
+    objetosCarrito();
 }
 
-const pintarCarrito = () =>{
+//creacion de objetos adentro del carrito
+const objetosCarrito = () =>{
+    item.innerHTML = ''
+    Object.values(carrito).forEach(producto => {
+        templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
+        templateCarrito.querySelectorAll('td')[0].textContent = producto.tituloproduct
+        templateCarrito.querySelector('.btnsuma').dataset.id = producto.id
+        templateCarrito.querySelector('.btnresta').dataset.id = producto.id
+        templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
 
+        const cloner = templateCarrito.cloneNode(true)
+        fragment.appendChild(cloner)
+    })
+    item.appendChild(fragment)
 }
 
 //modo oscuro
 const darkmode = document.querySelector(".dark-mode")
 
-darkmode.addEventListener("click", ()=>{
+darkmode.addEventListener('click', ()=>{
     document.body.classList.toggle("dark")
+    document.body.classList.contains('dark') ? localStorage.setItem('darkMode', 'true') : localStorage.setItem('darkMode', 'false')
 })
+
+//modo blanco
+localStorage.getItem("darkMode") === "true" ? document.body.classList.add("dark") : document.body.classList.remove("dark")
