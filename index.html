@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Home | CompuTechX</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-menu">
+                <div class="brand">
+                    <h2 class="h2-brand">C <span class="c1">T</span> <span class="c2">X</span> </h2>
+                </div>
+                <ul>
+                    <li><a class="nav-a" href="#">Home</a></li>
+                    <li><a class="nav-a" href="#">Productos</a></li>
+                    <li><a class="nav-a" href="#">Sobre Nosotros</a></li>
+                    <li><a class="nav-a" href="#">Comunicate</a></li>
+                </ul>
+                <div class="interfaz-user">
+                    <div class="carrito">
+                        <ul>
+                            <li class="submenu">
+                                <i class="fa-solid fa-cart-shopping" id="img-carrito"></i>
+                                <div id="changito">
+                                    <table id="lista_carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Productos</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                        <tfoot>
+                                            <tr id="footer">
+                                                <th class="text-carrito">Carrito vacio</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="usuario">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="mode-dark">
+                        <div class="box-mode">
+                            <input class="dark-mode" type="button" value="Dark Mode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="productos-backg">
+            <div class="categoria">
+                <h2 class="h2-cate">Categorias</h2>
+                <div class="cate-menu">
+                    <ul>
+                        <li> <a href="#">MotherBoard</a></li>
+                        <li><a href="#">Procesadores</a></li>
+                        <li><a href="#">Ram</a></li>
+                        <li><a href="#">Fuente</a></li>
+                        <li><a href="#">Gabinete</a></li>
+                        <li><a href="#">Disco SSD</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="sect-productos">
+            <h1>Productos - <span class="c3">C</span>ompu<span class="c1">T</span>ech<span class="c2">X</span></h1>
+            <hr>
+                <div class="products-box">
+                    <div id="items" class="box-p"></div>
+                </div>
+        </section>
+        <!--Creacion de la carta de productos-->
+        <template id="templateprod" class="products-box">
+            <div class="productos">
+                <h2 class="tituloproduct"></h2>
+                <img class="imgproduct" src="" alt="">
+                <p class="precio"></p>
+                <button class="btnbuy">Comprar</button>
+            </div>
+        </template>
+    <!--Creacion de objetos de productos en el carrito-->
+        <template class="templatecarrito">
+            <tr>
+                <th>id</th>
+                <td>Cafe</td>
+                <td>1</td>
+                <td>
+                    <button class="btnsuma">
+                        +
+                    </button>
+                    <button class="btnresta">
+                        -
+                    </button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
+        <!--Creacion de footer de productos en el carrito-->
+        <template class="templateFooter">
+            <th>total Productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn_vaciar" id="vaciarCarrito">
+                    Vaciar todo
+                </button>
+            </td>
+        </template>
+    </main>
+    <footer>
+
+    </footer>
+    <!--JavaScript-->
+    <script src="./js/main.js"></script>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/591b1de1f6.js" crossorigin="anonymous"></script>
+</body>
+</html>
