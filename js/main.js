@@ -7,6 +7,7 @@ const templateCarrito = document.getElementById('template-carrito').content;
 const templateFooter = document.getElementById('template-footer').content;
 const contador = document.getElementById('contador-total')
 const btnbuys = document.querySelector('.btnbuy');
+const nav = document.querySelector(".nav");
 const fragment = document.createDocumentFragment();
 let carrito = {}
 let contar = 0
@@ -19,6 +20,7 @@ cards.addEventListener('click', e =>{
     addCarrito(e)
 })
 
+//cartel de alerta
 const alerts = () =>{
     swal({
         title: "Bienvenido a CompuTechX",
