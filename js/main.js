@@ -20,7 +20,7 @@ cards.addEventListener('click', e =>{
 const alerts = () =>{
     swal({
         title: "Bienvenido a CompuTechX",
-        text: "Donde Encontraras Los Mejores Precios Y Productos",
+        text: "Aqui Encontraras Los Mejores Precios Y Productos",
         button: "Continuar",
     });
 }
