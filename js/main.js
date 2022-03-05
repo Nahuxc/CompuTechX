@@ -5,9 +5,11 @@ const footer = document.getElementById('footer');
 const templateProd = document.getElementById('templateprod').content;
 const templateCarrito = document.getElementById('template-carrito').content;
 const templateFooter = document.getElementById('template-footer').content;
+const contador = document.getElementById('contador-total')
 const btnbuys = document.querySelector('.btnbuy');
 const fragment = document.createDocumentFragment();
 let carrito = {}
+let contar = 0
 
 document.addEventListener('DOMContentLoaded', () =>{
     fetchData();
@@ -59,6 +61,8 @@ const pintarProd = data =>{
 const addCarrito = e =>{
     if(e.target.classList.contains('btnbuy')){
         setCarrito(e.target.parentElement)
+        contar++
+        contador.innerHTML = contar
     }
     e.stopPropagation()
 }

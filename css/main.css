@@ -94,6 +94,7 @@ body.dark .navbar .nav-menu .h2-brand {
 }
 
 .navbar .nav-menu .h2-brand .c1 {
+  text-decoration: none;
   color: #1aa4ce;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
 }
@@ -411,6 +412,19 @@ body.dark .sect-productos .products-box .box-p .productos {
 .carrito .submenu i {
   font-size: 30px;
   margin: -20px;
+}
+
+.carrito .submenu #contador-total {
+  font-size: 15px;
+  background-color: #008cff;
+  padding: 0px 3px;
+  border-radius: 20px;
+  color: white;
+  margin-left: 5px;
+}
+
+body.dark .carrito .submenu #contador-total {
+  color: black;
 }
 
 .carrito .submenu #carrito-menu {
