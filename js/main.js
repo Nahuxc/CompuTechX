@@ -49,9 +49,9 @@ const pintarProd = data =>{
     data.forEach(producto => {
         templateProd.querySelector('.tituloproduct').textContent = producto.tituloproduct
         templateProd.querySelector('.imgproduct').setAttribute("src", producto.imgproduct)
-        templateProd.querySelector('.peso').textContent = producto.peso
-        templateProd.querySelector('.precio').textContent = producto.precio
-        templateProd.querySelector('.envio').textContent = producto.envio
+        templateProd.querySelector('.peso').textContent =  producto.peso
+        templateProd.querySelector('.precio').textContent =  producto.precio
+        templateProd.querySelector('.envio').innerHTML = `<i class="fa-solid camion fa-truck-fast"></i> ` + producto.envio
         templateProd.querySelector('.btnbuy').dataset.id = producto.id;
 
         const clone = templateProd.cloneNode(true)
@@ -100,7 +100,9 @@ const objetosCarrito = () =>{
         fragment.appendChild(cloner)
     })
     item.appendChild(fragment)
+
 }
+
 
 //modo oscuro
 const darkmode = document.querySelector(".dark-mode")

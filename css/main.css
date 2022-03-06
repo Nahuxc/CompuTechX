@@ -367,18 +367,24 @@ body.dark .sect-productos .products-box .box-p .productos {
 }
 
 .sect-productos .products-box .box-p .productos .peso {
+  font-size: 20px;
   position: relative;
-  top: 29px;
-  width: 20%;
+  top: 32px;
+  width: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: #eceaea;
   text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+body.dark .sect-productos .products-box .box-p .productos .peso {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
 }
 
 .sect-productos .products-box .box-p .productos .precio {
@@ -396,6 +402,15 @@ body.dark .sect-productos .products-box .box-p .productos {
   font-size: 20px;
   color: #f3efef;
   text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+}
+
+.sect-productos .products-box .box-p .productos .envio i {
+  color: #0f0f0f;
+  text-shadow: none;
+}
+
+body.dark .sect-productos .products-box .box-p .productos .envio i {
+  color: white;
 }
 
 .sect-productos .products-box .box-p .productos .btnbuy {

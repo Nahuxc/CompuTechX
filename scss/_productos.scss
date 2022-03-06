@@ -75,13 +75,18 @@
                     height: auto;
                 }
                 .peso{
+                    font-size: 20px;
                     position: relative;
-                    top: 29px;
-                    width: 20%;
+                    top: 32px;
+                    width: 22%;
                     display: flex;
-                    color: white;
-                    text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+                    color: #eceaea;
+                    text-shadow:  2px 2px 5px #222,  2px 2px 5px #333;
                     flex-direction: row;
+                    body.dark &{
+                        color: #ffffff;
+                        text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+                    }
                 }
                 .precio{
                     line-height: 2;
@@ -97,6 +102,13 @@
                     font-size: 20px;
                     color: #f3efef;
                     text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+                    i{
+                        color: #0f0f0f;
+                        text-shadow: none;
+                        body.dark &{
+                            color: white;
+                        }
+                    }
                 }
                 .btnbuy{
                     border: none;
