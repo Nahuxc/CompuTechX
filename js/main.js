@@ -51,6 +51,7 @@ const pintarProd = data =>{
         templateProd.querySelector('.imgproduct').setAttribute("src", producto.imgproduct)
         templateProd.querySelector('.peso').textContent = producto.peso
         templateProd.querySelector('.precio').textContent = producto.precio
+        templateProd.querySelector('.envio').textContent = producto.envio
         templateProd.querySelector('.btnbuy').dataset.id = producto.id;
 
         const clone = templateProd.cloneNode(true)
