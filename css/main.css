@@ -363,7 +363,7 @@ body.dark .sect-productos .products-box .box-p .productos {
 
 .sect-productos .products-box .box-p .productos .imgproduct {
   width: 400px;
-  height: auto;
+  height: 350px;
 }
 
 .sect-productos .products-box .box-p .productos .peso {
@@ -393,6 +393,10 @@ body.dark .sect-productos .products-box .box-p .productos .peso {
   font-size: 20px;
   color: #f3efef;
   text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
+}
+
+.sect-productos .products-box .box-p .productos .precio::before {
+  content: "$";
 }
 
 .sect-productos .products-box .box-p .productos .envio {

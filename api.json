@@ -1,8 +1,7 @@
 [
     {
-        "tituloproduct": "Motherboard Asus Prime B450m-a",
+        "tituloproduct": "Motherboard Asus Prime B450M-A",
         "imgproduct":"./img/motherboard2.jpg",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 8000,
         "id": 1
@@ -10,15 +9,13 @@
     {
         "tituloproduct": "Motherboard B560m Aorus",
         "imgproduct":"./img/motherboard.jpg",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 20000,
         "id": 2
     },
     {
-        "tituloproduct": "Motherboard Asus Prime A320m-k",
+        "tituloproduct": "Motherboard Asus Prime B450M-A",
         "imgproduct":"./img/motherboard2.jpg",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 5330,
         "id": 3
@@ -27,7 +24,6 @@
         "tituloproduct": "Procesador Intel Core I3",
         "imgproduct":"./img/Procesador.jpg",
         "marca": "Intel",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 14000,
         "id": 4
@@ -36,7 +32,6 @@
         "tituloproduct": "Procesador Intel Core I3",
         "imgproduct":"./img/Procesador.jpg",
         "marca": "Intel",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 18000,
         "id": 5
@@ -45,34 +40,30 @@
         "tituloproduct": "Procesador Intel Core I5",
         "imgproduct":"./img/Procesador1.jpg",
         "marca": "Intel",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 25000,
         "id": 6
     },
     {
-        "tituloproduct": "RAM HyperX DDR4 8GB 2400MHz",
-        "imgproduct":"./img/ram.jpg",
-        "marca":"HyperX",
-        "peso": "$",
-        "envio": "Envio: Gratis",
-        "precio": 5320,
-        "id": 7
-    },
-    {
         "tituloproduct": "RAM HyperX DDR4 4GB 2400MHz",
         "imgproduct":"./img/ram.jpg",
         "marca":"HyperX",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 2800,
+        "id": 7
+    },
+    {
+        "tituloproduct": "RAM HyperX DDR4 8GB 2400MHz",
+        "imgproduct":"./img/ram.jpg",
+        "marca":"HyperX",
+        "envio": "Envio: Gratis",
+        "precio": 5350,
         "id": 8
     },
     {
         "tituloproduct": "RAM HyperX DDR4 16GB 2666MHz",
         "imgproduct":"./img/ram.jpg",
         "marca":"HyperX",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 11500,
         "id": 9
@@ -81,7 +72,6 @@
         "tituloproduct": "Fuente Cyclon 500w",
         "imgproduct":"./img/Fuente.jpg",
         "marca":"Cyclon",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 6500,
         "id": 10
@@ -90,7 +80,6 @@
         "tituloproduct": "Fuente LNZ 550w",
         "imgproduct":"./img/Fuente1.jpg",
         "marca":"LNZ",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 1400,
         "id": 11
@@ -99,7 +88,6 @@
         "tituloproduct": "Fuente Cyclon 750w",
         "imgproduct":"./img/Fuente.jpg",
         "marca":"Cyclon",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 8000,
         "id": 12
@@ -107,7 +95,6 @@
     {
         "tituloproduct": "Disco SSD Kingston 120 GB",
         "imgproduct":"./img/SSD.jpg",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 2100,
         "id": 13
@@ -115,7 +102,6 @@
     {
         "tituloproduct": "Disco SSD Kingston 240 GB",
         "imgproduct":"./img/SSD.jpg",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 3800,
         "id": 14
@@ -123,25 +109,22 @@
     {
         "tituloproduct": "Disco SSD Kingston 960 GB",
         "imgproduct":"./img/SSD.jpg",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 18000,
         "id": 15
     },
     {
-        "tituloproduct": "Gabinete Brainstorm Spark",
+        "tituloproduct": "Gabinete X627 Argb Tg Raidmax",
         "imgproduct":"./img/Gabinete1.jpg",
         "marca":"Brainstorm",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 5350,
         "id": 16
     },
     {
-        "tituloproduct": "Brainstorm Mastra Series 4 Fan Rgb",
+        "tituloproduct": "Gabinete X627 Argb Tg Raidmax",
         "imgproduct":"./img/Gabinete1.jpg",
         "marca":"Brainstorm",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 8200,
         "id": 17
@@ -150,7 +133,6 @@
         "tituloproduct": "Gabinete Sentey",
         "imgproduct":"./img/Gabinete.jpg",
         "marca":"Sentey",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 3400,
         "id": 18
@@ -159,16 +141,14 @@
         "tituloproduct": "Disco Duro HDD 1TB",
         "imgproduct":"./img/discohdd.jpg",
         "marca":"western digital",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 5350,
         "id": 19
     },
     {
         "tituloproduct": "Disco Duro HDD 2TB",
-        "imgproduct":"./img/discohdd1.jpg",
+        "imgproduct":"./img/discohdd3.jpg",
         "marca":"western digital",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 8200,
         "id": 20
@@ -177,16 +157,14 @@
         "tituloproduct": "Disco Duro Segate Barracuda 3TB",
         "imgproduct":"./img/discohdd2.jpg",
         "marca":"Barracuda",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 12450,
         "id": 21
     },
     {
-        "tituloproduct": "Teclado GM STRIKE RGB",
+        "tituloproduct": "Teclado Gamer STRIKE RGB",
         "imgproduct":"./img/teclado.jpg",
         "marca": "Strike",
-        "peso": "$",
         "envio": "Envio: Gratis",
         "precio": 5750,
         "id": 22
@@ -195,16 +173,16 @@
         "tituloproduct": "Teclado Redragon K552-W RGB",
         "imgproduct":"./img/teclado2.jpg",
         "marca": "Redragon",
-        "peso": "$",
+        
         "envio": "Envio: Gratis",
         "precio": 8200,
         "id": 23
     },
     {
-        "tituloproduct": "Teclado GM Logitech RGB",
+        "tituloproduct": "Teclado Gamer Logitech RGB",
         "imgproduct":"./img/teclado3.png",
         "marca":"Logitech",
-        "peso": "$",
+        
         "envio": "Envio: Gratis",
         "precio": 3400,
         "id": 24
@@ -213,7 +191,7 @@
         "tituloproduct": "AMD Ryzen 7 3700X",
         "imgproduct":"./img/ProcesadorRyzen.jpg",
         "marca": "AMD Ryzen",
-        "peso": "$",
+        
         "envio": "Envio: Gratis",
         "precio": 45250,
         "id": 25
@@ -222,7 +200,7 @@
         "tituloproduct": "AMD Ryzen 5 3400g",
         "imgproduct":"./img/ProcesadorRyzen1.jpg",
         "marca": "AMD Ryzen",
-        "peso": "$",
+        
         "envio": "Envio: Gratis",
         "precio": 33750,
         "id": 26
@@ -231,7 +209,7 @@
         "tituloproduct": "AMD Ryzen 7 5700g",
         "imgproduct":"./img/ProcesadorRyzen.jpg",
         "marca": "AMD Ryzen",
-        "peso": "$",
+        
         "envio": "Envio: Gratis",
         "precio": 53200,
         "id": 27
