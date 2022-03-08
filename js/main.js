@@ -20,19 +20,6 @@ cards.addEventListener('click', e =>{
     addCarrito(e)
 })
 
-
-//cartel de alerta
-const alerts = () =>{
-    swal({
-        title: "Bienvenido a CompuTechX",
-        text: "Aqui Encontraras Los Mejores Precios Y Productos",
-        button: "Continuar",
-    });
-}
-
-alerts();
-
-
 //json
 const fetchData = async() =>{
     try {
