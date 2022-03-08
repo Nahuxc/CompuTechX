@@ -20,6 +20,7 @@ cards.addEventListener('click', e =>{
     addCarrito(e)
 })
 
+
 //cartel de alerta
 const alerts = () =>{
     swal({
@@ -66,6 +67,10 @@ const addCarrito = e =>{
         setCarrito(e.target.parentElement)
         contar++
         contador.innerHTML = contar
+        swal({
+            title: `Gracias Por Comprar!`,
+            text: `Tu Producto Se Agrego Al Carrito`
+        });
     }
     e.stopPropagation()
 }
@@ -92,9 +97,9 @@ const objetosCarrito = () =>{
     Object.values(carrito).forEach(producto => {
         templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
         templateCarrito.querySelectorAll('td')[0].textContent = producto.tituloproduct
+        templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
         templateCarrito.querySelector('.btnsuma').dataset.id = producto.id
         templateCarrito.querySelector('.btnresta').dataset.id = producto.id
-        templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
 
         const cloner = templateCarrito.cloneNode(true)
         fragment.appendChild(cloner)

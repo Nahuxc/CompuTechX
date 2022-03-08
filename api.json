@@ -213,5 +213,13 @@
         "envio": "Envio: Gratis",
         "precio": 53200,
         "id": 27
+    },
+    {
+        "tituloproduct": "AMD Ryzen 5 3600x",
+        "imgproduct":"./img/ProcesadorRyzen1.jpg",
+        "marca": "AMD Ryzen",
+        "envio": "Envio: Gratis",
+        "precio": 42750,
+        "id": 28
     }
 ]
