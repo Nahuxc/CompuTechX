@@ -37,13 +37,19 @@
                         font-weight: 800;
                         border-radius: 10px;
                         cursor: pointer;
-                        background-color: #1276b8;
+                        background-color: #000000;
                         font-size: 15px;
                         padding: 5px;
                         transition: all 500ms ease;
                         &:hover{
-                            background-color: #0077ff;
                             margin: 5px;
+                        }
+                        body.dark &{
+                            background-color: white;
+                            color: #000000;
+                            &:hover{
+                                margin: 5px;
+                            }
                         }
                     }
                 }

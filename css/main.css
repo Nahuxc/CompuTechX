@@ -56,7 +56,7 @@ body.dark .navbar {
   font-weight: 800;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #1276b8;
+  background-color: #000000;
   font-size: 15px;
   padding: 5px;
   -webkit-transition: all 500ms ease;
@@ -64,7 +64,15 @@ body.dark .navbar {
 }
 
 .navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode:hover {
-  background-color: #0077ff;
+  margin: 5px;
+}
+
+body.dark .navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode {
+  background-color: white;
+  color: #000000;
+}
+
+body.dark .navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode:hover {
   margin: 5px;
 }
 
@@ -421,7 +429,12 @@ body.dark .sect-productos .products-box .box-p .productos .envio i {
   color: white;
 }
 
+.sect-productos .products-box .box-p .productos .stars {
+  color: #dbcf25;
+}
+
 .sect-productos .products-box .box-p .productos .btnbuy {
+  margin: 10px;
   border: none;
   color: white;
   background-color: #2988c7;
@@ -728,6 +741,7 @@ body.dark .carrito .submenu:hover #carrito-menu {
   background-color: #00a2ff;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .home-sect .home-inicio .button-home a:hover {
