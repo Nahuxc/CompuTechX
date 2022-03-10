@@ -121,6 +121,12 @@ body.dark .navbar .nav-menu .h2-brand {
   background-color: #3d3d3d;
   color: #ffffff;
   text-shadow: 0px 0px 3px #131313, 1px 1px 3px #0f0f0f;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+body.dark .navbar .nav-menu .h2-brand:hover {
+  background-color: #a4c8eb;
 }
 
 .navbar .nav-menu .h2-brand .c1 {
@@ -830,6 +836,12 @@ body.dark footer .footer-info .h2-brand {
   background-color: #3d3d3d;
   color: #ffffff;
   text-shadow: 0px 0px 3px #131313, 1px 1px 3px #0f0f0f;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+body.dark footer .footer-info .h2-brand:hover {
+  background-color: #a4c8eb;
 }
 
 footer .footer-info .h2-brand .c1 {
