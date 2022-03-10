@@ -173,7 +173,6 @@
         "tituloproduct": "Teclado Redragon K552-W RGB",
         "imgproduct":"./img/teclado2.jpg",
         "marca": "Redragon",
-        
         "envio": "Envio: Gratis",
         "precio": 8200,
         "id": 23
@@ -182,7 +181,6 @@
         "tituloproduct": "Teclado Gamer Logitech RGB",
         "imgproduct":"./img/teclado3.png",
         "marca":"Logitech",
-        
         "envio": "Envio: Gratis",
         "precio": 3400,
         "id": 24
@@ -191,7 +189,6 @@
         "tituloproduct": "AMD Ryzen 7 3700X",
         "imgproduct":"./img/ProcesadorRyzen.jpg",
         "marca": "AMD Ryzen",
-        
         "envio": "Envio: Gratis",
         "precio": 45250,
         "id": 25
@@ -200,7 +197,6 @@
         "tituloproduct": "AMD Ryzen 5 3400g",
         "imgproduct":"./img/ProcesadorRyzen1.jpg",
         "marca": "AMD Ryzen",
-        
         "envio": "Envio: Gratis",
         "precio": 33750,
         "id": 26
@@ -209,7 +205,6 @@
         "tituloproduct": "AMD Ryzen 7 5700g",
         "imgproduct":"./img/ProcesadorRyzen.jpg",
         "marca": "AMD Ryzen",
-        
         "envio": "Envio: Gratis",
         "precio": 53200,
         "id": 27

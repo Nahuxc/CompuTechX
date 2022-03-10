@@ -37,7 +37,6 @@ const pintarProd = data =>{
     data.forEach(producto => {
         templateProd.querySelector('.tituloproduct').textContent = producto.tituloproduct
         templateProd.querySelector('.imgproduct').setAttribute("src", producto.imgproduct)
-        templateProd.querySelector('.peso').textContent =  producto.peso
         templateProd.querySelector('.precio').textContent =  producto.precio
         templateProd.querySelector('.envio').innerHTML = `<i class="fa-solid camion fa-truck-fast"></i> ` + producto.envio
         templateProd.querySelector('.btnbuy').dataset.id = producto.id;
@@ -101,7 +100,7 @@ const darkmode = document.querySelector(".dark-mode")
 
 darkmode.addEventListener('click', ()=>{
     document.body.classList.toggle("dark")
-    document.body.classList.contains('dark') ? localStorage.setItem('darkMode', 'true') : localStorage.setItem('darkMode', 'false')
+    document.body.classList.contains('dark') ? localStorage.setItem('darkMode', 'true'): localStorage.setItem('darkMode', 'false')
 })
 
 //modo blanco

@@ -83,6 +83,10 @@
             margin-left: 30px;
             color: white;
             text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
+            transition: all 500ms;
+            &:hover{
+                background-color: #a4c8eb;
+            }
             body.dark &{
                 background-color: #3d3d3d;
                 color: #ffffff;

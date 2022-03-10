@@ -109,6 +109,12 @@ body.dark .navbar .nav-menu .interfaz-user .usuario a {
   margin-left: 30px;
   color: white;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.navbar .nav-menu .h2-brand:hover {
+  background-color: #a4c8eb;
 }
 
 body.dark .navbar .nav-menu .h2-brand {
@@ -749,6 +755,191 @@ body.dark .carrito .submenu:hover #carrito-menu {
   font-size: 35px;
   padding: 20px;
   margin: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: #141414;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+footer .pie-pagina {
+  background-color: #212427;
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+footer .pie-pagina:hover {
+  color: #008cff;
+}
+
+footer .pie-pagina small {
+  font-size: 20px;
+}
+
+footer .footer-info {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 60px 0px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-info .h2-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #2e2d2d;
+  border-radius: 50px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+footer .footer-info .h2-brand:hover {
+  background-color: #a4c8eb;
+}
+
+body.dark footer .footer-info .h2-brand {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #131313, 1px 1px 3px #0f0f0f;
+}
+
+footer .footer-info .h2-brand .c1 {
+  text-decoration: none;
+  color: #1aa4ce;
+  text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
+}
+
+body.dark footer .footer-info .h2-brand .c1 {
+  text-shadow: 0px 0px 3px #1b1b1b, 1px 1px 3px #202020;
+}
+
+footer .footer-info .h2-brand .c2 {
+  color: #9b3333;
+  text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
+}
+
+body.dark footer .footer-info .h2-brand .c2 {
+  text-shadow: 0px 0px 5px #222222;
+}
+
+footer .footer-info .text-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+footer .footer-info .text-footer h2 {
+  color: #78b7f1;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer .footer-info .text-footer p {
+  text-align: center;
+  margin-right: 10px;
+  color: #e6f0f8;
+  font-size: 15px;
+}
+
+footer .footer-info .redes {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-decoration: none;
+}
+
+footer .footer-info .redes h2 {
+  margin-bottom: 10px;
+  color: #78b7f1;
+  font-size: 25px;
+}
+
+footer .footer-info .redes .fa-instagram {
+  color: #ee2763;
+  font-size: 20px;
+  text-decoration: none;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+footer .footer-info .redes .fa-instagram:hover {
+  color: #f87b06;
+}
+
+footer .footer-info .redes .fa-github {
+  color: white;
+  margin: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+footer .footer-info .redes .fa-github:hover {
+  color: #b6cbdf;
+}
+
+footer .footer-info .redes a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+footer .footer-info .redes a:hover {
+  color: #1a7dda;
+}
+
+footer .footer-info .redes a .fa-envelope {
+  font-size: 20px;
+  color: cornflowerblue;
+  text-decoration: none;
 }
 
 * {
