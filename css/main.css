@@ -199,6 +199,199 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
   margin: 5px;
 }
 
+.home-sect {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: fixed;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-sect .home-inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  padding: 10px;
+}
+
+.home-sect .home-inicio .titulo-home {
+  font-size: 5em;
+  color: white;
+  margin: 10px;
+}
+
+.home-sect .home-inicio .textos-anim-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  height: 45px;
+  color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: sans-serif;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
+  position: absolute;
+  top: 350px;
+  left: 570px;
+  overflow: hidden;
+}
+
+.home-sect .home-inicio .textos-anim-home .b1 {
+  color: #289be7;
+}
+
+.home-sect .home-inicio .textos-anim-home ul {
+  list-style: none;
+  padding-left: 10px;
+  -webkit-animation: cambiar 9s infinite;
+          animation: cambiar 9s infinite;
+}
+
+.home-sect .home-inicio .textos-anim-home .h1-anim {
+  font-size: 50px;
+}
+
+.home-sect .home-inicio .textos-anim-home ul, .home-sect .home-inicio .textos-anim-home h1 {
+  margin: 0;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 10px #222, 2px 2px 10px #333, 2px 2px 10px #222;
+}
+
+@-webkit-keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -40px;
+  }
+  55% {
+    margin-top: -80px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  95% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: -0;
+  }
+}
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -40px;
+  }
+  55% {
+    margin-top: -80px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  95% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: -0;
+  }
+}
+
+.home-sect .home-inicio .button-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 280px;
+}
+
+.home-sect .home-inicio .button-home h2 {
+  margin-bottom: 100px;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
+}
+
+.home-sect .home-inicio .button-home a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 40px;
+  background-color: #00a2ff;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.home-sect .home-inicio .button-home a:hover {
+  background-color: #0077ff;
+  font-size: 35px;
+  padding: 20px;
+  margin: 10px;
+}
+
 .productos-backg {
   width: 100%;
   background-color: #e2e2e2;
@@ -568,199 +761,6 @@ body.dark .carrito .submenu:hover #carrito-menu {
 
 .carrito .submenu:hover #carrito-menu .table .btnresta:hover {
   background-color: #eb1c1c;
-}
-
-.home-sect {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background: fixed;
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.home-sect .home-inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-  padding: 10px;
-}
-
-.home-sect .home-inicio .titulo-home {
-  font-size: 5em;
-  color: white;
-  margin: 10px;
-}
-
-.home-sect .home-inicio .textos-anim-home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1000px;
-  height: 45px;
-  color: white;
-  border-radius: 10px;
-  font-size: 30px;
-  font-family: sans-serif;
-  line-height: 40px;
-  font-weight: 800;
-  margin-bottom: 50px;
-  text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
-  position: absolute;
-  top: 350px;
-  left: 570px;
-  overflow: hidden;
-}
-
-.home-sect .home-inicio .textos-anim-home .b1 {
-  color: #289be7;
-}
-
-.home-sect .home-inicio .textos-anim-home ul {
-  list-style: none;
-  padding-left: 10px;
-  -webkit-animation: cambiar 9s infinite;
-          animation: cambiar 9s infinite;
-}
-
-.home-sect .home-inicio .textos-anim-home .h1-anim {
-  font-size: 50px;
-}
-
-.home-sect .home-inicio .textos-anim-home ul, .home-sect .home-inicio .textos-anim-home h1 {
-  margin: 0;
-  font-size: 40px;
-  font-family: sans-serif;
-  font-weight: 800;
-  text-shadow: 2px 2px 10px #222, 2px 2px 10px #333, 2px 2px 10px #222;
-}
-
-@-webkit-keyframes cambiar {
-  0% {
-    margin-top: 0;
-  }
-  20% {
-    margin-top: 0;
-  }
-  25% {
-    margin-top: -40px;
-  }
-  50% {
-    margin-top: -40px;
-  }
-  55% {
-    margin-top: -80px;
-  }
-  80% {
-    margin-top: -80px;
-  }
-  85% {
-    margin-top: -40px;
-  }
-  95% {
-    margin-top: -40px;
-  }
-  100% {
-    margin-top: -0;
-  }
-}
-
-@keyframes cambiar {
-  0% {
-    margin-top: 0;
-  }
-  20% {
-    margin-top: 0;
-  }
-  25% {
-    margin-top: -40px;
-  }
-  50% {
-    margin-top: -40px;
-  }
-  55% {
-    margin-top: -80px;
-  }
-  80% {
-    margin-top: -80px;
-  }
-  85% {
-    margin-top: -40px;
-  }
-  95% {
-    margin-top: -40px;
-  }
-  100% {
-    margin-top: -0;
-  }
-}
-
-.home-sect .home-inicio .button-home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin-top: 280px;
-}
-
-.home-sect .home-inicio .button-home h2 {
-  margin-bottom: 100px;
-  font-size: 50px;
-  font-family: sans-serif;
-  font-weight: 800;
-  color: white;
-  border-radius: 10px;
-  padding: 15px;
-  text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
-}
-
-.home-sect .home-inicio .button-home a {
-  padding: 15px;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  font-size: 40px;
-  background-color: #00a2ff;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  cursor: pointer;
-}
-
-.home-sect .home-inicio .button-home a:hover {
-  background-color: #0077ff;
-  font-size: 35px;
-  padding: 20px;
-  margin: 10px;
 }
 
 footer {
