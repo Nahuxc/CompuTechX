@@ -763,6 +763,62 @@ body.dark .carrito .submenu:hover #carrito-menu {
   background-color: #eb1c1c;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* scroll-website */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #289be7;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #289be7;
+}
+
+::-webkit-scrollbar-track {
+  background: #626262;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+          box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #cccaca;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 600;
+  -webkit-transition: .3 ease all;
+  transition: .3 ease all;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(61, 101, 134, 0))), url(../img/fondoback.jpg);
+  background: linear-gradient(to right, black, rgba(61, 101, 134, 0)), url(../img/fondoback.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+}
+
+body.dark {
+  background-color: #333;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
 footer {
   width: 100%;
   background-color: #141414;
@@ -952,61 +1008,5 @@ footer .footer-info .redes a .fa-envelope {
   font-size: 20px;
   color: cornflowerblue;
   text-decoration: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* scroll-website */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #289be7;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #289be7;
-}
-
-::-webkit-scrollbar-track {
-  background: #626262;
-  border-radius: 0px;
-  -webkit-box-shadow: inset 0px 0px 0px 0px #f0f0f0;
-          box-shadow: inset 0px 0px 0px 0px #f0f0f0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  background-color: #cccaca;
-  color: black;
-  font-family: sans-serif;
-  font-weight: 600;
-  -webkit-transition: .3 ease all;
-  transition: .3 ease all;
-  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(61, 101, 134, 0))), url(../img/fondoback.jpg);
-  background: linear-gradient(to right, black, rgba(61, 101, 134, 0)), url(../img/fondoback.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-  background-size: cover;
-}
-
-body.dark {
-  background-color: #333;
-  color: white;
-  font-family: sans-serif;
-  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
