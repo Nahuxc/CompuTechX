@@ -9,8 +9,8 @@ const contador = document.getElementById('contador-total');
 const btnbuys = document.querySelector('.btnbuy');
 const nav = document.querySelector(".nav");
 const fragment = document.createDocumentFragment();
-let carrito = {}
-let contar = 0
+let carrito = {};
+let contar = 0;
 
 document.addEventListener('DOMContentLoaded', () =>{
     fetchData();
@@ -18,7 +18,11 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 cards.addEventListener('click', e =>{
     addCarrito(e)
-})
+});
+
+item.addEventListener('click', e =>{
+    btnAccion(e)
+});
 
 //json
 const fetchData = async() =>{
@@ -29,23 +33,23 @@ const fetchData = async() =>{
     } catch (error) {
         console.log(error);
     }
-}
+};
 
 
 //creacion de objetos
 const pintarProd = data =>{
     data.forEach(producto => {
-        templateProd.querySelector('.tituloproduct').textContent = producto.tituloproduct
-        templateProd.querySelector('.imgproduct').setAttribute("src", producto.imgproduct)
-        templateProd.querySelector('.precio').textContent =  producto.precio
-        templateProd.querySelector('.envio').innerHTML = `<i class="fa-solid camion fa-truck-fast"></i> ` + producto.envio
+        templateProd.querySelector('.tituloproduct').textContent = producto.tituloproduct;
+        templateProd.querySelector('.imgproduct').setAttribute("src", producto.imgproduct);
+        templateProd.querySelector('.precio').textContent =  producto.precio;
+        templateProd.querySelector('.envio').innerHTML = `<i class="fa-solid camion fa-truck-fast"></i> ` + producto.envio;
         templateProd.querySelector('.btnbuy').dataset.id = producto.id;
 
-        const clone = templateProd.cloneNode(true)
-        fragment.appendChild(clone)
+        const clone = templateProd.cloneNode(true);
+        fragment.appendChild(clone);
     });
-    cards.appendChild(fragment)
-}
+    cards.appendChild(fragment);
+};
 
 //añadir al carrito
 const addCarrito = e =>{
@@ -57,9 +61,9 @@ const addCarrito = e =>{
             title: `Gracias Por Comprar!`,
             text: `Tu Producto Se Agrego Al Carrito`
         });
-    }
-    e.stopPropagation()
-}
+    };
+    e.stopPropagation();
+};
 
 const setCarrito = objeto =>{
     const producto ={
@@ -67,12 +71,12 @@ const setCarrito = objeto =>{
         tituloproduct: objeto.querySelector('.tituloproduct').textContent,
         precio: objeto.querySelector('.precio').textContent,
         cantidad: 1
-    }
+    };
     if(carrito.hasOwnProperty(producto.id)){
         producto.cantidad = carrito[producto.id].cantidad+ 1;
-    }
+    };
 
-    carrito[producto.id] = {...producto}
+    carrito[producto.id] = {...producto};
     console.log(carrito);
     objetosCarrito();
 }
@@ -81,27 +85,83 @@ const setCarrito = objeto =>{
 const objetosCarrito = () =>{
     item.innerHTML = ''
     Object.values(carrito).forEach(producto => {
-        templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
-        templateCarrito.querySelectorAll('td')[0].textContent = producto.tituloproduct
-        templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
-        templateCarrito.querySelector('.btnsuma').dataset.id = producto.id
-        templateCarrito.querySelector('.btnresta').dataset.id = producto.id
+        templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad;
+        templateCarrito.querySelectorAll('td')[0].textContent = producto.tituloproduct;
+        templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio;
+        templateCarrito.querySelector('.btnsuma').dataset.id = producto.id;
+        templateCarrito.querySelector('.btnresta').dataset.id = producto.id;
 
-        const cloner = templateCarrito.cloneNode(true)
-        fragment.appendChild(cloner)
+        const cloner = templateCarrito.cloneNode(true);
+        fragment.appendChild(cloner);
     })
-    item.appendChild(fragment)
+    item.appendChild(fragment);
 
+    crearFooter();
 }
 
+//creacion de footer de carrito/productos
+const crearFooter= () =>{
+    footer.innerHTML = ""
+    if(Object.keys(carrito).length === 0){
+        footer.innerHTML = `<th class="th-2">Carrito Vacio - Comience a comprar!</th>`
 
+        return;
+    };
+
+    const precioN = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0);
+
+    templateFooter.querySelector('span').textContent = precioN;
+
+    const clone = templateFooter.cloneNode(true);
+
+    fragment.appendChild(clone);
+    footer.appendChild(fragment);
+
+    //boton de vaciar carrito
+    const btnVaciar = document.getElementById('vaciarCarrito');
+    btnVaciar.addEventListener('click', ()=>{
+        carrito = {};
+        contar = 0;
+        contador.innerHTML = contar;
+        objetosCarrito();
+    });
+};
+
+const btnAccion = e =>{
+    //aumento de los productos
+    if(e.target.classList.contains("btnsuma")){
+        carrito[e.target.dataset.id];
+
+        const producto = carrito[e.target.dataset.id];
+        producto.cantidad++
+        carrito[e.target.dataset.id] = {...producto}
+        contar++
+        contador.innerHTML = contar;
+        objetosCarrito();
+    };
+    //resta de los productos
+    if(e.target.classList.contains("btnresta")){
+        carrito[e.target.dataset.id];
+
+        const producto = carrito[e.target.dataset.id];
+        producto.cantidad--
+        if(producto.cantidad === 0){
+            delete carrito[e.target.dataset.id];
+        }
+        contar--
+        contador.innerHTML = contar;
+        objetosCarrito();
+    };
+
+    e.stopPropagation();
+};
 //modo oscuro
 const darkmode = document.querySelector(".dark-mode")
 
 darkmode.addEventListener('click', ()=>{
-    document.body.classList.toggle("dark")
-    document.body.classList.contains('dark') ? localStorage.setItem('darkMode', 'true'): localStorage.setItem('darkMode', 'false')
-})
+    document.body.classList.toggle("dark");
+    document.body.classList.contains('dark') ? localStorage.setItem('darkMode', 'true'): localStorage.setItem('darkMode', 'false');
+});
 
 //modo blanco
-localStorage.getItem("darkMode") === "true" ? document.body.classList.add("dark") : document.body.classList.remove("dark")
+localStorage.getItem("darkMode") === "true" ? document.body.classList.add("dark") : document.body.classList.remove("dark");
