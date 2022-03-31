@@ -7,6 +7,7 @@ const templateCarrito = document.getElementById('template-carrito').content;
 const templateFooter = document.getElementById('template-footer').content;
 const contador = document.getElementById('contador-total');
 const btnbuys = document.querySelector('.btnbuy');
+const ver = document.querySelector(".btnvermas")
 const nav = document.querySelector(".nav");
 const fragment = document.createDocumentFragment();
 let carrito = {};
@@ -23,6 +24,13 @@ cards.addEventListener('click', e =>{
 item.addEventListener('click', e =>{
     btnAccion(e)
 });
+
+
+//abrir pestaña de otros productos
+function vermas(){
+    let abrir = window.open("./pages/verproducto.html")
+}
+
 
 //json
 const fetchData = async() =>{
@@ -44,6 +52,7 @@ const pintarProd = data =>{
         templateProd.querySelector('.precio').textContent =  producto.precio;
         templateProd.querySelector('.envio').innerHTML = `<i class="fa-solid camion fa-truck-fast"></i> ` + producto.envio;
         templateProd.querySelector('.btnbuy').dataset.id = producto.id;
+        templateProd.querySelector('.btnvermas').innerHTML;
 
         const clone = templateProd.cloneNode(true);
         fragment.appendChild(clone);
