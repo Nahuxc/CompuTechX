@@ -79,7 +79,8 @@ const setCarrito = objeto =>{
         id: objeto.querySelector('.btnbuy').dataset.id,
         tituloproduct: objeto.querySelector('.tituloproduct').textContent,
         precio: objeto.querySelector('.precio').textContent,
-        cantidad: 1
+        cantidad: 1,
+        imgproduct:"./img/motherboard2.jpg"
     };
     if(carrito.hasOwnProperty(producto.id)){
         producto.cantidad = carrito[producto.id].cantidad+ 1;
