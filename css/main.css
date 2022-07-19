@@ -1,12 +1,12 @@
 .navbar {
   width: 100%;
+  padding: 1em;
   position: fixed;
   top: 0;
   background-color: #e2e2e2;
   -webkit-box-shadow: 0px 0px 3px #9e9e9e;
           box-shadow: 0px 0px 3px #9e9e9e;
   z-index: 2;
-  padding: 1em;
 }
 
 body.dark .navbar {
@@ -25,6 +25,7 @@ body.dark .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* interfaz de usuario */
 }
 
 .navbar .nav-menu .interfaz-user {
@@ -38,6 +39,7 @@ body.dark .navbar {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0px 20px;
+  /* boton de dark mode */
 }
 
 .navbar .nav-menu .interfaz-user li {
@@ -94,13 +96,15 @@ body.dark .navbar .nav-menu .interfaz-user .dark-mode:hover {
   color: white;
 }
 
-.navbar .nav-menu .brand {
+.navbar .nav-menu .contenedor-nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* logo */
+  /* lista del menu */
 }
 
-.navbar .nav-menu .brand .h2-brand {
+.navbar .nav-menu .contenedor-nav-menu .h2-brand {
   padding: 15px;
   background-color: #222;
   border-radius: 50px;
@@ -112,11 +116,11 @@ body.dark .navbar .nav-menu .interfaz-user .dark-mode:hover {
   transition: all 500ms;
 }
 
-.navbar .nav-menu .brand .h2-brand:hover {
+.navbar .nav-menu .contenedor-nav-menu .h2-brand:hover {
   background-color: #a4c8eb;
 }
 
-body.dark .navbar .nav-menu .brand .h2-brand {
+body.dark .navbar .nav-menu .contenedor-nav-menu .h2-brand {
   background-color: #3d3d3d;
   color: #ffffff;
   text-shadow: 0px 0px 3px #131313, 1px 1px 3px #0f0f0f;
@@ -124,30 +128,30 @@ body.dark .navbar .nav-menu .brand .h2-brand {
   transition: all 500ms;
 }
 
-body.dark .navbar .nav-menu .brand .h2-brand:hover {
+body.dark .navbar .nav-menu .contenedor-nav-menu .h2-brand:hover {
   background-color: #a4c8eb;
 }
 
-.navbar .nav-menu .brand .h2-brand .c1 {
+.navbar .nav-menu .contenedor-nav-menu .h2-brand .c1 {
   text-decoration: none;
   color: #1aa4ce;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
 }
 
-body.dark .navbar .nav-menu .brand .h2-brand .c1 {
+body.dark .navbar .nav-menu .contenedor-nav-menu .h2-brand .c1 {
   text-shadow: 0px 0px 3px #1b1b1b, 1px 1px 3px #202020;
 }
 
-.navbar .nav-menu .brand .h2-brand .c2 {
+.navbar .nav-menu .contenedor-nav-menu .h2-brand .c2 {
   color: #9b3333;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
 }
 
-body.dark .navbar .nav-menu .brand .h2-brand .c2 {
+body.dark .navbar .nav-menu .contenedor-nav-menu .h2-brand .c2 {
   text-shadow: 0px 0px 5px #222222;
 }
 
-.navbar .nav-menu ul {
+.navbar .nav-menu .contenedor-nav-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,13 +162,13 @@ body.dark .navbar .nav-menu .brand .h2-brand .c2 {
           align-items: center;
 }
 
-.navbar .nav-menu ul li {
+.navbar .nav-menu .contenedor-nav-menu ul li {
   list-style: none;
   font-size: 20px;
   margin: 0px 10px;
 }
 
-.navbar .nav-menu ul li .nav-a {
+.navbar .nav-menu .contenedor-nav-menu ul li .nav-a {
   background-color: #e0e0e0;
   border-radius: 5px;
   padding: 10px;
@@ -174,14 +178,14 @@ body.dark .navbar .nav-menu .brand .h2-brand .c2 {
   transition: 300ms;
 }
 
-body.dark .navbar .nav-menu ul li .nav-a {
+body.dark .navbar .nav-menu .contenedor-nav-menu ul li .nav-a {
   background-color: #3d3d3d;
   color: white;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
 
-body.dark .navbar .nav-menu ul li .nav-a:hover {
+body.dark .navbar .nav-menu .contenedor-nav-menu ul li .nav-a:hover {
   width: 20px;
   height: 30px;
   background-color: #e2e2e2;
@@ -189,7 +193,7 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
   color: #202020;
 }
 
-.navbar .nav-menu ul li .nav-a:hover {
+.navbar .nav-menu .contenedor-nav-menu ul li .nav-a:hover {
   width: 20px;
   height: 30px;
   background-color: #131313;
@@ -387,13 +391,14 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   padding: 20px;
 }
 
@@ -413,11 +418,14 @@ body.dark .categoria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .categoria .cate-menu li {
   list-style: none;
   margin: 0px 10px;
+  padding: 15px;
 }
 
 .categoria .cate-menu li a {
@@ -437,9 +445,7 @@ body.dark .categoria {
 
 .sect-productos {
   padding: 30px;
-  width: 100%;
   background-color: rgba(255, 255, 255, 0.685);
-  border-radius: 10px;
 }
 
 body.dark .sect-productos {
@@ -890,8 +896,8 @@ footer .footer-info {
   display: -ms-grid;
   display: grid;
   margin: auto;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(15rem, 3fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 3fr));
   grid-gap: 50px;
   padding: 60px 0px;
   text-align: center;

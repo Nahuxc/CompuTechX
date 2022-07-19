@@ -80,7 +80,7 @@ footer{
     .footer-info{
         display: grid;
         margin: auto;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 3fr));
         grid-gap: 50px;
         padding: 60px 0px;
         text-align: center;
