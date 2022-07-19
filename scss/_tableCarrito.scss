@@ -1,5 +1,4 @@
-.carrito{
-    .submenu{
+.submenu{
         position: relative;
         cursor: pointer;
         transition: all 300ms;
@@ -8,7 +7,6 @@
         }
         i{
             font-size: 30px;
-            margin: -20px;
         }
         #contador-total{
             font-size: 15px;
@@ -16,7 +14,6 @@
             padding: 0px 3px ;
             border-radius: 20px;
             color: rgb(255, 255, 255);
-            margin-left: 5px;
             body.dark &{
                 color: black;
             }
@@ -139,4 +136,3 @@
             }
         }
     }
-}

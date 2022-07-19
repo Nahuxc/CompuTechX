@@ -6,6 +6,7 @@
   -webkit-box-shadow: 0px 0px 3px #9e9e9e;
           box-shadow: 0px 0px 3px #9e9e9e;
   z-index: 2;
+  padding: 1em;
 }
 
 body.dark .navbar {
@@ -21,35 +22,50 @@ body.dark .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .navbar .nav-menu .interfaz-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 0px 20px;
 }
 
-.navbar .nav-menu .interfaz-user .carrito {
-  margin-right: 20px;
-  padding: 5px;
-  width: 15%;
+.navbar .nav-menu .interfaz-user li {
+  list-style: none;
+  margin: 0px 20px;
 }
 
-.navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode {
-  margin-right: 10px;
+.navbar .nav-menu .interfaz-user li .usuario {
+  text-decoration: none;
+  color: black;
+}
+
+body.dark .navbar .nav-menu .interfaz-user li .usuario {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-menu .interfaz-user li .usuario i {
+  font-size: 30px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.navbar .nav-menu .interfaz-user li .usuario i:hover {
+  color: #2587c8;
+}
+
+.navbar .nav-menu .interfaz-user .dark-mode {
   border: none;
   color: white;
   font-family: sans-serif;
@@ -61,47 +77,30 @@ body.dark .navbar {
   padding: 5px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  margin: 0px 20px;
 }
 
-.navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode:hover {
-  margin: 5px;
+.navbar .nav-menu .interfaz-user .dark-mode:hover {
+  background-color: #3d3d3d;
 }
 
-body.dark .navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode {
+body.dark .navbar .nav-menu .interfaz-user .dark-mode {
   background-color: white;
   color: #000000;
 }
 
-body.dark .navbar .nav-menu .interfaz-user .mode-dark .box-mode .dark-mode:hover {
-  margin: 5px;
-}
-
-.navbar .nav-menu .interfaz-user .usuario {
-  margin-right: 10px;
-  padding: 5px;
-}
-
-.navbar .nav-menu .interfaz-user .usuario a {
-  text-decoration: none;
-  color: black;
-}
-
-body.dark .navbar .nav-menu .interfaz-user .usuario a {
+body.dark .navbar .nav-menu .interfaz-user .dark-mode:hover {
+  background-color: #3d3d3d;
   color: white;
-  text-decoration: none;
 }
 
-.navbar .nav-menu .interfaz-user .usuario a i {
-  font-size: 30px;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+.navbar .nav-menu .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.navbar .nav-menu .interfaz-user .usuario a i:hover {
-  color: #2587c8;
-}
-
-.navbar .nav-menu .h2-brand {
+.navbar .nav-menu .brand .h2-brand {
   padding: 15px;
   background-color: #222;
   border-radius: 50px;
@@ -113,11 +112,11 @@ body.dark .navbar .nav-menu .interfaz-user .usuario a {
   transition: all 500ms;
 }
 
-.navbar .nav-menu .h2-brand:hover {
+.navbar .nav-menu .brand .h2-brand:hover {
   background-color: #a4c8eb;
 }
 
-body.dark .navbar .nav-menu .h2-brand {
+body.dark .navbar .nav-menu .brand .h2-brand {
   background-color: #3d3d3d;
   color: #ffffff;
   text-shadow: 0px 0px 3px #131313, 1px 1px 3px #0f0f0f;
@@ -125,26 +124,26 @@ body.dark .navbar .nav-menu .h2-brand {
   transition: all 500ms;
 }
 
-body.dark .navbar .nav-menu .h2-brand:hover {
+body.dark .navbar .nav-menu .brand .h2-brand:hover {
   background-color: #a4c8eb;
 }
 
-.navbar .nav-menu .h2-brand .c1 {
+.navbar .nav-menu .brand .h2-brand .c1 {
   text-decoration: none;
   color: #1aa4ce;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
 }
 
-body.dark .navbar .nav-menu .h2-brand .c1 {
+body.dark .navbar .nav-menu .brand .h2-brand .c1 {
   text-shadow: 0px 0px 3px #1b1b1b, 1px 1px 3px #202020;
 }
 
-.navbar .nav-menu .h2-brand .c2 {
+.navbar .nav-menu .brand .h2-brand .c2 {
   color: #9b3333;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
 }
 
-body.dark .navbar .nav-menu .h2-brand .c2 {
+body.dark .navbar .nav-menu .brand .h2-brand .c2 {
   text-shadow: 0px 0px 5px #222222;
 }
 
@@ -152,16 +151,17 @@ body.dark .navbar .nav-menu .h2-brand .c2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10px;
-  margin-right: 750px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .nav-menu ul li {
   list-style: none;
   font-size: 20px;
+  margin: 0px 10px;
 }
 
 .navbar .nav-menu ul li .nav-a {
@@ -187,7 +187,6 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
   background-color: #e2e2e2;
   border-radius: 15px;
   color: #202020;
-  margin: 5px;
 }
 
 .navbar .nav-menu ul li .nav-a:hover {
@@ -196,7 +195,6 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
   background-color: #131313;
   border-radius: 15px;
   color: white;
-  margin: 5px;
 }
 
 .home-sect {
@@ -231,33 +229,25 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: left;
   padding: 10px;
-}
-
-.home-sect .home-inicio .titulo-home {
-  font-size: 5em;
-  color: white;
-  margin: 10px;
 }
 
 .home-sect .home-inicio .textos-anim-home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1000px;
-  height: 45px;
+  height: 40px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   border-radius: 10px;
   font-size: 30px;
   font-family: sans-serif;
   line-height: 40px;
   font-weight: 800;
-  margin-bottom: 50px;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
-  position: absolute;
-  top: 350px;
-  left: 570px;
   overflow: hidden;
 }
 
@@ -273,7 +263,7 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
 }
 
 .home-sect .home-inicio .textos-anim-home .h1-anim {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .home-sect .home-inicio .textos-anim-home ul, .home-sect .home-inicio .textos-anim-home h1 {
@@ -359,17 +349,16 @@ body.dark .navbar .nav-menu ul li .nav-a:hover {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: 280px;
 }
 
 .home-sect .home-inicio .button-home h2 {
-  margin-bottom: 100px;
   font-size: 50px;
   font-family: sans-serif;
   font-weight: 800;
   color: white;
   border-radius: 10px;
   padding: 15px;
+  margin: 40px 0px;
   text-shadow: 2px 2px 5px #222, 2px 2px 5px #333, 2px 2px 5px #222;
 }
 
@@ -676,40 +665,38 @@ body.dark .sect-productos .products-box .box-p .productos .envio i {
   background-color: #28a1f1;
 }
 
-.carrito .submenu {
+.submenu {
   position: relative;
   cursor: pointer;
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
 
-.carrito .submenu:hover {
+.submenu:hover {
   color: #2587c8;
 }
 
-.carrito .submenu i {
+.submenu i {
   font-size: 30px;
-  margin: -20px;
 }
 
-.carrito .submenu #contador-total {
+.submenu #contador-total {
   font-size: 15px;
   background-color: #008cff;
   padding: 0px 3px;
   border-radius: 20px;
   color: white;
-  margin-left: 5px;
 }
 
-body.dark .carrito .submenu #contador-total {
+body.dark .submenu #contador-total {
   color: black;
 }
 
-.carrito .submenu #carrito-menu {
+.submenu #carrito-menu {
   display: none;
 }
 
-.carrito .submenu:hover #carrito-menu {
+.submenu:hover #carrito-menu {
   display: block;
   position: absolute;
   right: -80px;
@@ -725,11 +712,11 @@ body.dark .carrito .submenu #contador-total {
   border-radius: 10px;
 }
 
-body.dark .carrito .submenu:hover #carrito-menu {
+body.dark .submenu:hover #carrito-menu {
   background-color: rgba(125, 125, 125, 0.87);
 }
 
-.carrito .submenu:hover #carrito-menu .table {
+.submenu:hover #carrito-menu .table {
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -737,7 +724,7 @@ body.dark .carrito .submenu:hover #carrito-menu {
   text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
 }
 
-.carrito .submenu:hover #carrito-menu .table .th-1 {
+.submenu:hover #carrito-menu .table .th-1 {
   padding: 10px;
   color: #e4e4e4;
   text-shadow: 2px 2px 5px #222,  2px 2px 5px #333;
@@ -747,7 +734,7 @@ body.dark .carrito .submenu:hover #carrito-menu {
   line-height: 1;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btnsuma {
+.submenu:hover #carrito-menu .table .btnsuma {
   border-radius: 5px;
   border: none;
   text-align: center;
@@ -760,11 +747,11 @@ body.dark .carrito .submenu:hover #carrito-menu {
   cursor: pointer;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btnsuma:hover {
+.submenu:hover #carrito-menu .table .btnsuma:hover {
   background-color: #00a2ff;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btnresta {
+.submenu:hover #carrito-menu .table .btnresta {
   border-radius: 5px;
   border: none;
   text-align: center;
@@ -778,11 +765,11 @@ body.dark .carrito .submenu:hover #carrito-menu {
   cursor: pointer;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btnresta:hover {
+.submenu:hover #carrito-menu .table .btnresta:hover {
   background-color: #eb1c1c;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btn-vaciar {
+.submenu:hover #carrito-menu .table .btn-vaciar {
   border-radius: 5px;
   border: none;
   text-align: center;
@@ -800,11 +787,11 @@ body.dark .carrito .submenu:hover #carrito-menu {
   cursor: pointer;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btn-vaciar:hover {
+.submenu:hover #carrito-menu .table .btn-vaciar:hover {
   background-color: #eb1c1c;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btn-finalizar {
+.submenu:hover #carrito-menu .table .btn-finalizar {
   border-radius: 5px;
   border: none;
   text-align: center;
@@ -822,22 +809,22 @@ body.dark .carrito .submenu:hover #carrito-menu {
   cursor: pointer;
 }
 
-.carrito .submenu:hover #carrito-menu .table .btn-finalizar:hover {
+.submenu:hover #carrito-menu .table .btn-finalizar:hover {
   background-color: #00a2ff;
 }
 
-.carrito .submenu:hover #carrito-menu .table .th-2 {
+.submenu:hover #carrito-menu .table .th-2 {
   position: relative;
   top: 120px;
   left: 250px;
 }
 
-.carrito .submenu:hover #carrito-menu .table #item {
+.submenu:hover #carrito-menu .table #item {
   position: relative;
   top: 15px;
 }
 
-.carrito .submenu:hover #carrito-menu .table #footer {
+.submenu:hover #carrito-menu .table #footer {
   position: relative;
   top: 25px;
 }

@@ -15,48 +15,39 @@
             <div class="nav-menu">
                 <div class="brand">
                    <h2 class="h2-brand">C <span class="c1">T</span> <span class="c2">X</span> </h2>
+                   <ul>
+                       <li><a class="nav-a" href="#">Home</a></li>
+                       <li><a class="nav-a" href="#menu-productos">Productos</a></li>
+                       <li><a class="nav-a" href="#">Categorias</a></li>
+                       <li><a class="nav-a" href="#">Comunicate</a></li>
+                   </ul>
                 </div>
-                <ul>
-                    <li><a class="nav-a" href="#">Home</a></li>
-                    <li><a class="nav-a" href="#menu-productos">Productos</a></li>
-                    <li><a class="nav-a" href="#">Categorias</a></li>
-                    <li><a class="nav-a" href="#">Comunicate</a></li>
-                </ul>
                 <div class="interfaz-user">
                     <!--carrito-->
-                    <div class="carrito">
-                        <ul>
-                            <li class="submenu">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span id="contador-total">0</span>
-                                <div id="carrito-menu">
-                                    <table class="table" id="shop">
-                                        <thead>
-                                            <tr class="tr-1">
-                                                <th class="th-1">Productos</th>
-                                                <th class="th-1">Cantidad</th>
-                                                <th class="th-1">Total</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="item"></tbody>
-                                        <tfoot>
-                                            <tr id="footer">
-                                                <th class="th-2">Carrito Vacio - Comience a comprar!</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="usuario">
-                        <a href="#"><i class="fa-solid fa-user"></i></a>
-                    </div>
-                    <div class="mode-dark">
-                        <div class="box-mode">
-                            <button class="dark-mode" type="button"><i class="fa-solid fa-moon"></i></button>
+                    <li class="submenu">
+                        <p><i class="fa-solid fa-cart-shopping"></i><span id="contador-total">0</span></p>
+                        <div id="carrito-menu">
+                            <table class="table" id="shop">
+                                <thead>
+                                    <tr class="tr-1">
+                                        <th class="th-1">Productos</th>
+                                        <th class="th-1">Cantidad</th>
+                                        <th class="th-1">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="item"></tbody>
+                                <tfoot>
+                                    <tr id="footer">
+                                        <th class="th-2">Carrito Vacio - Comience a comprar!</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
-                    </div>
+                    </li>
+                    <!-- usuario -->
+                    <li><a class="usuario" href="#"><i class="fa-solid fa-user"></i></a></li>
+                    <!-- boton dark mode -->
+                    <button class="dark-mode" type="button"><i class="fa-solid fa-moon"></i></button>
                 </div>
             </div>
         </nav>
