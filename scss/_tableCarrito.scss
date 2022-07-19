@@ -11,11 +11,11 @@
         #contador-total{
             font-size: 15px;
             background-color: #008cff;
-            padding: 0px 3px ;
+            padding: 2px 3px ;
             border-radius: 20px;
             color: rgb(255, 255, 255);
             body.dark &{
-                color: black;
+                color: white;
             }
         }
     }
